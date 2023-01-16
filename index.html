@@ -69,12 +69,12 @@
 
           <div class="is-size-5 publication-authors">
             <span class="author-block"><sup>1</sup>Australian National University,</span>
-            <span class="author-block"><sup>2</sup>Reality Labs Research,</span>
+            <span class="author-block"><sup>2</sup>Meta Reality Labs Research,</span>
             <span class="author-block"><sup>3</sup>Google</span>
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block">In submission</span>
+            <span class="author-block"> </span>
           </div>
 
           <div class="column has-text-centered">
@@ -170,9 +170,26 @@
     <!-- more video. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Interpolate Between Eyeglasses</h2>
+        <h2 class="title is-3">Training of the Model</h2>
+        <p>
+          Here, we show a example video of how our MEGANE model is trained from scratch. Our model started from three plane-like structure on face. Once trained, the geometry detailed of the eyeglasses is well reconstructed.
+        </p>
         <div class="publication-video">
-          <video id="video_arxiv" controls height="100%">
+          <video id="training_iterations" controls height="100%">
+            <source src="https://junxuan-li.github.io/megane/static/images/training_iterations.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Interpolate Between Eyeglasses</h2>
+        <p>
+          Our methods supports the interpolation between eyeglasses.
+        </p>
+        <div class="publication-video">
+          <video id="eyeglasses_interpolate_2" controls height="100%">
             <source src="https://junxuan-li.github.io/megane/static/images/eyeglasses_interpolate_2.mp4"
                     type="video/mp4">
           </video>
@@ -182,8 +199,11 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Relighting</h2>
+        <p>
+          Our eyeglasses model is relightable. Here we show the face and eyeglasses being relight with a point light source.
+        </p>
         <div class="publication-video">
-          <video id="video_arxiv" controls height="100%">
+          <video id="relight_eyeglasses" controls height="100%">
             <source src="https://junxuan-li.github.io/megane/static/images/relight_eyeglasses.mp4"
                     type="video/mp4">
           </video>
@@ -193,8 +213,11 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Eyeglasses Lens Insertion</h2>
+        <p>
+          Our eyeglasses model even support the lens insertion with realistic refraction and reflection effects.
+        </p>
         <div class="publication-video">
-          <video id="video_arxiv" controls height="100%">
+          <video id="lens_insertion" controls height="100%">
             <source src="https://junxuan-li.github.io/megane/static/images/lens_insertion.mp4"
                     type="video/mp4">
           </video>
@@ -205,8 +228,30 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Eyeglasses Lens Insertion (Rotation)</h2>
         <div class="publication-video">
-          <video id="video_arxiv" controls height="100%">
+          <video id="lens_insertion_rotate" controls height="100%">
             <source src="https://junxuan-li.github.io/megane/static/images/lens_insertion_rotate.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Few-shot Fitting on Unseen Eyeglasses</h2>
+        <p>
+          Once trained, given as few as ten inputs, our method can reconstruct an unseen eyeglasses with realistic relighting results.
+        </p>
+        <div class="publication-video">
+          <video id="fitnew1" controls height="100%">
+            <source src="https://junxuan-li.github.io/megane/static/images/fitnew1.mp4"
+                    type="video/mp4">
+          </video>
+          <video id="fitnew2" controls height="100%">
+            <source src="https://junxuan-li.github.io/megane/static/images/fitnew2.mp4"
+                    type="video/mp4">
+          </video>
+          <video id="fitnew3" controls height="100%">
+            <source src="https://junxuan-li.github.io/megane/static/images/fitnew3.mp4"
                     type="video/mp4">
           </video>
         </div>
@@ -224,7 +269,6 @@
     <pre><code>@article{li2022megane,
   author    = {Li, Junxuan and Saito, Shunsuke and Simon, Tomas and Lombardi, Stephen and Li, Hongdong and Saragih, Jason},
   title     = {MEGANE: Morphable Eyeglass and Avatar Network},
-  journal   = {},
   year      = {2023},
 }</code></pre>
   </div>
